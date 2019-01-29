@@ -2,7 +2,7 @@
 
 ## Clone the project:
 
-git clone https://github.com/
+git clone https://github.com/bbblllaaaccckkk/Landing-test
 
 ## Upload npm packages:
 
@@ -12,6 +12,6 @@ npm install
 
 gulp run
 
-### TO DO:
+
 
 
