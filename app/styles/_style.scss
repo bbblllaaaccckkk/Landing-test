@@ -8,14 +8,11 @@ body *{
     font-family: $fontBold;
 }
 
-// .container {
-//     // justify-content: center;
-// }
 
-.text-center {
-    display: flex;
-    justify-content: center;
-}
+// .text-center {
+//     display: flex;
+//     justify-content: center;
+// }
 
 
 
@@ -25,86 +22,93 @@ body *{
 
 
 
-//верхняя секция с контактвми с связью.
+//верхняя секция с контактами и связью.
 #header {
     box-shadow: 0px 11px 11px -5px #f1f1f1;
 
     .container {
-        padding: 20px;
+        padding: 20px 0;
+        
+
+        h3 {
+            font-size: 21px;
+            padding-bottom: 10px;
+        }
+    
+        
+        .oval {
+            border: 1px solid $colorDarkViolet;
+            border-radius: 20px;
+            padding: 10px 50px;
+    
+            a {
+                font-size: 18px;
+                text-decoration: underline dashed black;
+                color: black;
+            }
+    
+            &:hover {
+                cursor: pointer;
+                // background: $colorLightViolet;
+            }
+        }
+    
+        
+        a {
+            font-size: 12px;
+            text-decoration: underline dashed $colorLinkBlue;
+            color: $colorLinkBlue
+        }
+    
+        span {
+            font-size: 14px;
+            color: rgba(128, 128, 128, 0.842);
+        }
+    
+        h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+ 
     }
     
-    h3 {
-        font-size: 21px;
-        padding-bottom: 10px;
-    }
-
-    .oval-1,
-    .oval-2 {
-        border: 1px solid $colorDarkViolet;
-        border-radius: 20px;
-
-        &:hover {
-            cursor: pointer;
-            background: $colorLightViolet;
-        }
-    }
-
-    .oval-1 {
-        padding: 10px 50px;
-    }
-
-    .oval-2 {
-        padding: 10px 60px;
-    }
-
-    p {
-        font-size: 18px;
-        border-bottom: 1px dashed black;
-        
-    }
-
-    a {
-        font-size: 12px;
-        text-decoration: underline dashed $colorLinkBlue;
-        color: $colorLinkBlue
-    }
-
-    span {
-        font-size: 14px;
-    }
-
-    .col-3 {
-        align-items: center;
-    }
-
-    h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
 }
 
 // секция навигация по сайту
-#nav {
+menu {
+    // background: $colorDarkViolet;
 
-    padding: 25px 25px 40px 25px;
-
-    .container {
-        justify-content: center;
+    .navbar-toggler {
+        border: none;
     }
-
-    .col-2:nth-child(2n+1) {
-        border-left: 1px solid $colorLightViolet;
-        border-right: 1px solid $colorLightViolet;
+    
+    .navbar-collapse {
+        padding-top: 20px;
+        // margin: 0 160px;
+    
+        ul {
+            
+    
+            li {
+                width: 175px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                &:nth-child(2n+1) {
+                    border-left: 1px solid lightgray;
+                    border-right: 1px solid lightgray;
+                }
+    
+                a {
+                    text-decoration: underline;
+                    font-size: 14px;
+                }
+            }
+        }
     }
-
-    .col-2 {
-        width: 175px;
-    }
-
-    a {
-        font-size: 14px;
-        color: gray;
-    }
+    
 }
 
 
@@ -115,76 +119,75 @@ body *{
     .container {
         padding: 45px 0 90px 0;
 
-        :first-child {
-            :nth-child(2) {
-                padding: 10px 0;
+       .row {
+            :first-child {
+                :nth-child(2) {
+                padding: 8px 0 4px 0;
+                }
             }
+     
+
+            a {
+                color: $colorLinkBlue;
+                text-decoration: underline;
+            }
+
+            p {
+                span {
+                    color: $colorOrange;
+                }
+            }
+
+            .yandex:first-letter {
+                color: red;
+            }
+
+
+            .fa-recycle {
+                color: $colorGreen;
+                font-size: 22px;
+            }
+
+            a,
+            p {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 39px;
+                color: $colorLightViolet;
+                text-transform: uppercase;
+
+                span {
+                    color: $colorDarkViolet;
+                }
+            }
+
+            .col-lg-6 {
+                p {
+                    font-size: 10px;
+                    padding-top: 12px;
+                }
+
+                i {
+                    font-size: 15px;
+                    color: $colorOrange;
+                }
+            }
+
+            .fa-shopping-basket {
+                padding-bottom: 12px;
+                color: $colorOrange;
+                font-size: 22px;
+            }
+
+            h4 {
+                font-size: 18px;
+                padding-top: 6px;
+            }
+
         }
     }
-
-    a {
-        color: $colorLinkBlue;
-    }
-
-    p {
-        span {
-            color: $colorOrange;
-        }
-    }
-
-    .yandex:first-letter {
-        color: red;
-    }
-
-   .col-6,
-   .col-3 {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-   }
-
-   .fa-recycle {
-       color: $colorGreen;
-       font-size: 22px;
-   }
-
-   a,
-   p {
-       font-size: 14px;
-   }
-
-   h1 {
-       font-size: 39px;
-       color: $colorLightViolet;
-       text-transform: uppercase;
-
-       span {
-           color: $colorDarkViolet;
-       }
-   }
-
-   .col-6 {
-       p {
-           font-size: 10px;
-           padding-top: 12px;
-       }
-
-       i {
-           font-size: 15px;
-           color: $colorOrange;
-       }
-   }
-
-   .fa-shopping-basket {
-       padding-bottom: 12px;
-       color: $colorOrange;
-       font-size: 22px;
-   }
-
-   h4 {
-       font-size: 18px;
-       padding-top: 6px;
-   }
 
 }
 
@@ -320,9 +323,7 @@ body *{
         // скрытые выпадающие списки конец
     }
 
-
-
-    //Выпадающее меню закончилось---------
+//Выпадающее меню закончилось---------
 
 
 
@@ -334,8 +335,8 @@ body *{
         color: white;
     }
 
-    .col-4 {
-        padding: 50px 0 143px 0;
+    .col-lg-4 {
+        padding: 60px 10px 180px 10px;
         font-size: 24px;
         
         a {
@@ -349,6 +350,10 @@ body *{
         border-radius: 40px;
         padding: 25px 100px;
         position: relative;
+
+        a {
+            text-decoration: none;
+        }
 
         .square {
             width: 30px;
@@ -370,6 +375,12 @@ body *{
         border-radius: 40px;
         padding: 25px 80px;
         position: relative;
+
+        a {
+            text-decoration: underline;
+            color: white;
+        }
+
     }
 
     .oval-3 {
@@ -377,6 +388,11 @@ body *{
         border-radius: 40px;
         padding: 25px 70px;
         position: relative;
+        
+        a {
+            text-decoration: underline;
+            color: white;
+        }
     }
 
     .circle {
@@ -385,8 +401,8 @@ body *{
         background: white;
         border-radius: 50%;
         position: absolute;
-        margin-left: 86px;
-        bottom: 64px;
+        top: -10px;
+        right: 170px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -403,28 +419,35 @@ body *{
     .form-two {
         position: relative;
         bottom: 85px;
-        
-        
-        select {
-            justify-content: start;
-            display: flex;
-            color: #818181;
-            width: 225px;
-            padding: 11px;
-            font-size: 16px;
-            border-radius: 4px;
-        
-            &:hover {
-                background: white;
-                // color: $colorOrange;
+        font-size: 18px;
+
+        .dropdown-menu {
+            width: 230px;
+
+            a {
+                &:hover {
+                    color: $colorOrange;
+                    background: white;
+                }
             }
         }
 
-        .btn {
+        .btn-secondary {
+            width: 230px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            background: white;
+            color: gray;
+            border: none;
+            padding: 8px;
+        }
+
+        .btn-orange {
             justify-content: center;
             display: flex;
             color: white;
-            width: 225px;
+            width: 230px;
             padding: 11px;
             font-size: 16px;
             background: $colorOrange;
@@ -432,11 +455,8 @@ body *{
             border-radius: 4px;
         }
 
-        
-    }
-    //Стилизация select  ЗАКОНЧИЛОСЬ
-    
-
+    } 
+ 
 }
 
 
@@ -444,7 +464,7 @@ body *{
 .section-3 {
     box-shadow: 0px 11px 11px -5px #f1f1f1;
 
-    .col-6 {
+    .col-lg-6 {
         div.text-center {
             margin: 40px 20px;
             border: 1px solid $colorOrange;
@@ -491,13 +511,7 @@ body *{
         padding: 50px 10px;
     }
 
-    .col-10 {
-        background: #818181;
-        display: flex;
-        justify-content: center;
-    }
-
-    .col-4 {
+    .col-lg-4 {
         display: flex;
         justify-content: center;
        
@@ -530,16 +544,11 @@ body *{
                 padding: 5px;
                 color: white;
             }
-        }
-
-        
-        
+        }         
     }
 
     p {
-        padding: 30px 0 45px 0;;
-        display: flex;
-        justify-content: center;
+        padding: 30px 0 45px 0;
     }
 
 }
@@ -556,7 +565,7 @@ body *{
 //Общие стили закончились
 
 
-
+// секция "Отзывы клиентов"
 .section-5 {
 
     .head-fiolet {
@@ -567,7 +576,7 @@ body *{
         font-size: 24px;   
     }
 
-    .col-2 {
+    .col-lg-2 {
         display: flex;
         justify-content: center;
 
@@ -610,18 +619,17 @@ body *{
 }
 
 
-
+// секция "Отзывы клиентов"
 .section-6 {
 
     h3 {
         font-size: 24px;
     }
 
-    .col-6 {
-
+    .col-lg-6 {
 
         .border-p {
-            padding: 36px 18px 30px 18px;
+            margin: 40px 10px 30px 10px;
         }
 
         
@@ -633,7 +641,7 @@ body *{
         }
 
         .name {
-            padding: 40px 0 0 55px;
+            padding: 40px 0 0 50px;
 
             h3 {
                 padding-bottom: 12px;
@@ -661,14 +669,16 @@ body *{
 // Секция: "Популярные лазерные принтеры" / "Популярные струйные принтеры"
 .section-7 {
 
-    .col-12 {
+    .col-lg-12 {
+
+       
 
         div {
             border-bottom: 1px solid lightgray;
             display: flex;
             align-items: center;
             padding: 22px 0;
-            margin: 0 32px;
+            margin: 0 16px;
 
             p {
                 font-size: 14px;
@@ -676,7 +686,7 @@ body *{
             }
 
             .btn {
-                padding: 16px 46px;
+                padding: 5px 45px;
                 font-size: 18px;
                 color: white;
                 border-radius: 5px;
@@ -687,7 +697,7 @@ body *{
     }
 
 
-    .col-3 {
+    .col-lg-3 {
         padding-left: 32px;
 
         h4 {
@@ -717,42 +727,44 @@ body *{
 
     .container {
         padding: 0 32px;
-    }
+    
 
-    h3 {
-        font-size: 24px;
-        padding: 55px 0 30px 0;
-    }
+        h3 {
+            font-size: 24px;
+            padding: 55px 0 30px 0;
+        }
 
-    p {
-        font-size: 14px;
-        line-height: 2em;
-        padding-bottom: 50px;
-    }
+        p {
+            font-size: 14px;
+            line-height: 2em;
+            padding-bottom: 50px;
+        }
 
-    .rectangle {
-        padding: 60px 0 70px 0;
-    }
+        .rectangle {
+            margin: 60px 0 70px 0;
+            border: 2px dotted $colorOrange;
+            border-radius: 6px;
+            position: relative;
+            padding: 35px 0;
 
-    span {
-        font-size: 36px;
-        border: 2px dotted $colorOrange;
-        border-radius: 7px;
-        padding: 33px;
+            span {
+                font-size: 36px;
+            }
+    
+            .square {
+                width: 30px;
+                height: 30px;
+                border-right: 2px dotted $colorOrange;
+                border-top: 2px dotted $colorOrange;
+                transform: rotate(-45deg);
+                position: absolute;
+                bottom: 92px;
+                left: 42px;
+                background: white;
+            }
+        }
+ 
     }
-
-    .square {
-        width: 30px;
-        height: 30px;
-        border-right: 2px dotted $colorOrange;
-        border-top: 2px dotted $colorOrange;
-        transform: rotate(-45deg);
-        position: relative;
-        bottom: 92px;
-        left: 42px;
-        background: white;
-    }
-
 }
 
 
@@ -760,16 +772,16 @@ body *{
 .section-9 {
     box-shadow: 0px 11px 11px -5px #f1f1f1;
 
-    .col-12 {
+    .header {
         justify-content: space-between;
         display: flex;
-        padding: 40px 32px;
+        padding: 35px 32px;
         border-top: 1px solid $colorDarkViolet;
         border-bottom: 1px solid $colorDarkViolet;
         font-size: 18px;
+        margin-bottom: 45px;
 
         a {
-            
             color: $colorLinkBlue;
             text-decoration: underline;
         }
@@ -788,7 +800,6 @@ body *{
             cursor: pointer;
             font-family: $fontBold;
             
-            
             a {
                 color: white;
                 text-decoration: none;
@@ -798,23 +809,26 @@ body *{
 
     }
 
-    div {
+    div.links {
         display: flex;
         align-items: baseline;
+        margin-bottom: 55px;
 
         ul {
             font-size: 14px;
 
             li {
-                margin-top: 10px;
+                margin-top: 5px;
 
                 a {
                     color: black;
+                    text-decoration: underline;
                 }
 
                 .blue {
                     color: $colorLinkBlue;
                     text-decoration: underline;
+                    line-height: 1.3em;
                 }
 
             }
@@ -822,12 +836,14 @@ body *{
 
         .list-ul {
             flex-direction: column;
+            margin: 0 32px;
         }
 
         .color-ul {
-            padding-bottom: 20px;
+            padding-bottom: 10px;
             
             li {
+                margin-top: 10px;
 
                 a {
                     color: gray;
@@ -835,15 +851,9 @@ body *{
             }
         }
 
-        .links {
-            margin: 50px 32px;
-        }
-
-        .first-ul {
-            padding: 0 75px 10px 0;
-        }
 
         .second-ul {
+            padding-top: 10px;
             
             li {
                 padding-top: 10px;
@@ -863,6 +873,14 @@ body *{
 //секция с тремя принтерами
 .section-10 {
 
+    .row {
+
+        :nth-child(n+5) {
+            padding-top: 20px;
+        }
+    }
+    
+
     h3 {
         font-size: 30px;
         padding: 50px;
@@ -870,18 +888,14 @@ body *{
 
     
 
-    .col-4 {
-
-        a {
-            font-size: 18px;
-            color: $colorLinkBlue;
-            text-decoration: underline;
-            padding-top: 20px;
-            text-align: center;
-            line-height: 1.4em;
+    a {
+        font-size: 18px;
+        color: $colorLinkBlue;
+        text-decoration: underline;
+        text-align: center;
+        line-height: 1.4em;
         }
         
-    }
 }
 
 
@@ -889,16 +903,15 @@ body *{
 
     font-size: 14px;
 
-    .col-6 {
+    .col-lg-6 {
         padding: 30px 0;
 
         div {
             border: 1px solid lightgray;
             margin: 32px;
+            padding: 50px 0 50px 40px;
 
             ul {
-            
-                padding: 50px 0 50px 40px;
     
                 li {
                     padding-top: 12px;
@@ -907,8 +920,15 @@ body *{
             }
 
         }
-        
-
        
     }
 }
+
+
+
+
+// стили для адаптивности сайта--------------------------------------
+
+ // выпадающее меню
+
+
