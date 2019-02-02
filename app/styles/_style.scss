@@ -42,7 +42,6 @@ body *{
     
             &:hover {
                 cursor: pointer;
-                // background: $colorLightViolet;
             }
         }
     
@@ -69,7 +68,7 @@ body *{
 
 // секция навигация по сайту
 menu {
-    // background: $colorDarkViolet;
+    
 
     .navbar-toggler {
         border: none;
@@ -77,7 +76,7 @@ menu {
     
     .navbar-collapse {
         padding-top: 20px;
-        // margin: 0 160px;
+        
     
         ul {
             
@@ -190,7 +189,7 @@ menu {
 
 // секция с выпадающими меню 
 .section-2 {
-    // padding-top: 85px;
+
     background: url(../images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,7 +278,7 @@ menu {
                 
                 
                 .table {
-                    // padding-right: 100px;
+                    
 
                     li {
                         padding: 15px 0 15px 0;
@@ -641,7 +640,6 @@ menu {
             transform: rotate(-45deg);
             position: absolute;
             top: -15px;
-            // bottom: 217px;
             left: 55px;
             background: white;
         }
@@ -657,7 +655,6 @@ menu {
 
     .col-lg-12 {
 
-       
 
         div {
             border-bottom: 1px solid lightgray;
@@ -741,8 +738,6 @@ menu {
                 border-top: 2px dotted $colorOrange;
                 transform: rotate(-45deg);
                 position: absolute;
-                // bottom: 92px;
-                // left: 42px;
                 background: white;
                 top: -16px;
                 left: 40px;
@@ -795,11 +790,9 @@ menu {
 
     }
 
-    // div.links {
+    
     .row {
-        // display: flex;
-        // align-items: baseline;
-        // margin-bottom: 55px;
+        
 
         ul {
             font-size: 14px;
@@ -898,7 +891,6 @@ menu {
 
             ul {
                 border: 1px solid lightgray;
-                // background: yellowgreen;
                 margin: 20px;
                 padding: 40px 0 0 40px;
                 height: 100%;
@@ -1015,7 +1007,7 @@ menu {
                         .table {
 
                             li {
-                                // font-size: 14px;
+                                font-size: 14px;
                                 width: 150px;
                             }
                         }
@@ -1176,15 +1168,23 @@ menu {
                     p {
                         font-size: 14px;
                     }
+
+
+                    .list-ul {
+
+                        .table {
+    
+                            li {
+                                font-size: 14px;
+                                width: 120px;
+                            }
+                        }
+                    }
+
+
+
                 }
 
-                // .three-menu,
-                // .four-menu {
-
-                //     p {
-                //         margin-top: 10px;
-                //     }
-                // }
             }
 
             
@@ -1196,26 +1196,8 @@ menu {
                 margin-right: 150px; 
             }
 
-            .submenu {
-                
-
-                .list-ul {
-
-                    .table {
-
-                        li {
-                            font-size: 14px;
-                            width: 100px;
-                        }
-                    }
-                }
-
-            }
         }
 
-        .search-menu {
-            left: 130px;
-        }
 
         .container {
 
