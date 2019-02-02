@@ -38,7 +38,9 @@
             <nav class="navbar navbar-expand-lg navbar-light w-100 justify-content-center">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav justify-content-center d-flex align-items-center">
@@ -67,12 +69,13 @@
     <section class="section-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 col-md-6 text-center first-block">
                     <i class=" fa fa-recycle" aria-hidden="true"></i>
                     <p>Бережем природу вместе</p>
                     <a href="#">Сделайте картридж</a>
                 </div>
-                <div class="col-lg-6 text-center">
+
+                <div class="col-lg-6 col-md-12 text-center second-block">
                     <h1><span>Принт</span> сервис</h1>
                     <p class="text-bold yandex">Яндекс <span class="text-bold">маркет</span></p>
                     <div>
@@ -83,7 +86,8 @@
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                     </div>
                 </div>
-                <div class="col-lg-3 text-center">
+
+                <div class="col-lg-3 col-md-6 text-center third-block">
                     <i class="fa fa-shopping-basket" aria-hidden="true"></i>
                     <p><a href="#">В корзине</a> 12 товаров</p>
                     <h4 class="text-bold">165 575р.</h4>
@@ -95,7 +99,7 @@
     <section class="section-2">
         <!-- Выпадающее меню верхняя часть -->
         <div class="menu col-lg-12">
-            <div class="background-menu">
+            <div class="background-menu d-flex justify-content-center">
                 <div class="one-menu submenu">
                     <p>Лазерные картриджи</p>
                     <div class="list-ul">
@@ -231,26 +235,24 @@
         </div>
         <!-- Выпадающее меню верхняя часть закончилась! -->
 
-        
         <div class="container">
             <h2 class="text-center">Подобрать картридж и тонер к моему принтеру</h2>
             <div class="row">
-                <div class="col-lg-4 text-center ">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center ">
                     <div class="oval-1">
                         <a href="#">Мой принтер
                             <div class="square"></div>
                         </a>
                     </div>
-                      
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <div class="oval-2">
                         <a href="#">Номер принтера
                             <div class="circle"><span>?</span></div>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <div class="oval-3">
                         <a href="#">Номер картриджа
                             <div class="circle"><span>?</span></div>
@@ -258,66 +260,61 @@
                     </div>
                 </div>
             </div>
-
-
             
-            
-            <form class="form-two container justify-content-center d-flex">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="dropdown">
-                            <a class="btn btn-secondary"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Brother 
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Canon</a>
-                                <a class="dropdown-item" href="#">Xerox</a>
-                                <a class="dropdown-item" href="#">Epson</a>
-                                <a class="dropdown-item" href="#">Oki</a>
-                                <a class="dropdown-item" href="#">Sharp</a>
-                                <a class="dropdown-item" href="#">HP</a>
-                                <a class="dropdown-item" href="#">Ricoh</a>
-                            </div>
+            <form class="form-two row">
+                <div class="col-lg-3 col-md-4 col-sm-4 justify-content-center d-flex">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary"  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Brother 
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Canon</a>
+                            <a class="dropdown-item" href="#">Xerox</a>
+                            <a class="dropdown-item" href="#">Epson</a>
+                            <a class="dropdown-item" href="#">Oki</a>
+                            <a class="dropdown-item" href="#">Sharp</a>
+                            <a class="dropdown-item" href="#">HP</a>
+                            <a class="dropdown-item" href="#">Ricoh</a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="dropdown ">
-                            <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Серия
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Canon</a>
-                                <a class="dropdown-item" href="#">Xerox</a>
-                                <a class="dropdown-item" href="#">Epson</a>
-                                <a class="dropdown-item" href="#">Oki</a>
-                                <a class="dropdown-item" href="#">Sharp</a>
-                                <a class="dropdown-item" href="#">HP</a>
-                                <a class="dropdown-item" href="#">Ricoh</a>
-                            </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 justify-content-center d-flex">
+                    <div class="dropdown ">
+                        <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Серия
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Canon</a>
+                            <a class="dropdown-item" href="#">Xerox</a>
+                            <a class="dropdown-item" href="#">Epson</a>
+                            <a class="dropdown-item" href="#">Oki</a>
+                            <a class="dropdown-item" href="#">Sharp</a>
+                            <a class="dropdown-item" href="#">HP</a>
+                            <a class="dropdown-item" href="#">Ricoh</a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="dropdown">
-                            <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Модель
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">Canon</a>
-                                <a class="dropdown-item" href="#">Xerox</a>
-                                <a class="dropdown-item" href="#">Epson</a>
-                                <a class="dropdown-item" href="#">Oki</a>
-                                <a class="dropdown-item" href="#">Sharp</a>
-                                <a class="dropdown-item" href="#">HP</a>
-                                <a class="dropdown-item" href="#">Ricoh</a>
-                            </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 justify-content-center d-flex">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Модель
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Canon</a>
+                            <a class="dropdown-item" href="#">Xerox</a>
+                            <a class="dropdown-item" href="#">Epson</a>
+                            <a class="dropdown-item" href="#">Oki</a>
+                            <a class="dropdown-item" href="#">Sharp</a>
+                            <a class="dropdown-item" href="#">HP</a>
+                            <a class="dropdown-item" href="#">Ricoh</a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-12 text-center">
-                        <button type="submit" class="btn-orange">Найти картридж</button>
-                    </div>
+                </div>
+                <div class="col-lg-3  col-md-12 col-sm-12  justify-content-center d-flex ">
+                    <button type="submit" class="btn-orange">Найти картридж</button>
                 </div>
             </form>
         </div>
@@ -330,7 +327,7 @@
                     <div class="d-flex text-center">
                         <div class="image">
                             <a href="#">
-                                <img class="img-1" src="./images/img-1.png" alt="">
+                                <img class="img-1" src="./images/img-2.png" alt="">
                             </a>
                         </div>
                         <span class="text-left"><a href="#">Лазерные картриджи Samsung по специальным ценам, только в августе!</a></span>
@@ -340,7 +337,7 @@
                     <div class="d-flex text-center">
                         <div class="image">
                             <a href="#">
-                                <img class="img-2" src="./images/img-2.png" alt="">
+                                <img class="img-2" src="./images/img-1.png" alt="">
                             </a>
                         </div>
                         <span class="text-left"><a href="#">-25% на тонеры Canon при покупке сета из 4 цветов! Успевайте до конца Июля!</a></span>
@@ -352,10 +349,12 @@
 
     <!-- Секция с тремя иконками в оранжевых кругах -->
     <section class="section-4">
-        <div class="container text-center">
+        <div class="container">
+            <div class="row justify-content-center d-flex">
+                <h2 class="col-lg-8">Почему мы самый большой интернет-магазин картриджей в Екатеринбурге?</h2>
+            </div>
             <div class="row">
-                <h2 class="col-12">Почему мы самый большой интернет-магазин<br> картриджей в Екатеринбурге?</h2>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="orange">
                         <img src="./images/icon-1.png" alt="">
                     </div>
@@ -363,22 +362,22 @@
                         <i class="fa fa-rub" aria-hidden="true"></i>
                     </div>
                 </div>
-                <div class="col-lg-4">
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="orange">
                         <img src="./images/icon-2.png" alt="">
                     </div>
-                    
                 </div>
-                <div class="col-lg-4">
+                
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="orange">
                         <img src="./images/icon-3.png" alt="">
                     </div>
                 </div>
-                <p class="col-lg-4">Низкая цена</p>
-                <p class="col-lg-4">Быстрая доставка</p>
-                <p class="col-lg-4">Гарантия качества</p>
+                <p class="col-lg-4 col-md-4 col-sm-4">Низкая цена</p>
+                <p class="col-lg-4 col-md-4 col-sm-4">Быстрая доставка</p>
+                <p class="col-lg-4 col-md-4 col-sm-4">Гарантия качества</p>
             </div>
-            
         </div>
     </section>
 
@@ -389,67 +388,67 @@
                 <div class="w-100">
                     <h3 class="head-fiolet">Выбрать принтер по производителю</h3>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-1.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-2.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-3.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-4.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-5.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-6.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-7.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-8.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-9.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-10.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-11.png" alt="">
                     </a>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#">
                         <img src="./images/mark/mark-12.png" alt="">
                     </a> 
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-3 col-sm-4">
                     <a href="#" >
                         <img src="./images/mark/mark-13.png" alt="">
                     </a>
@@ -466,7 +465,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
 
@@ -482,31 +480,28 @@
                         <h3>Иван Иванов</h3>
                         <span>Генеральный директор корпорации "Газпром"</span>
                     </div>
+                    <div>
+                        <div class="border-p">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi vel hic rerum fugit tempore suscipit dolorem veniam eos natus cumque! Non beatae minus repellat, voluptate nesciunt eligendi optio error.</p>
+                            <div class="square"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="name">
                         <h3>Дмитрий Дмитров</h3>
                         <span>Генеральный директор корпорации "Роснефть"</span>
-                    </div>  
-                </div>
-                <div class="col-lg-6">
-                    <div class="border-p">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi vel hic rerum fugit tempore suscipit dolorem veniam eos natus cumque! Non beatae minus repellat, voluptate nesciunt eligendi optio error.</p>
-                        <div class="square"></div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="border-p">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, iusto. Amet inventore est cumque culpa dolorum recusandae vel quos provident exercitationem eius quisquam molestiae, pariatur dignissimos autem omnis ipsam unde.</p>
-                        <div class="square"></div>
+                    <div>
+                        <div class="border-p">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, iusto. Amet inventore est cumque culpa dolorum recusandae vel quos provident exercitationem eius quisquam molestiae, pariatur dignissimos autem omnis ipsam unde.</p>
+                            <div class="square"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
         </div>
-
     </section>
-
 
     <section class="section-7">
         <div class="container">
@@ -518,7 +513,7 @@
                         <button type="submit" class="btn">Нажмите здесь!</button>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>HP</h4>
                     <ul>
                         <li><a href="#">HP P2055dn тонер</a></li>
@@ -526,13 +521,13 @@
                         <li><a href="#">HP P2055dn тонер</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Samsung</h4>
                     <ul>
                         <li><a href="#">Samsung CLP-315 тонер</a></li>
                     </ul>   
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Canon</h4>
                     <ul>
                         <li><a href="#">Canon MP495 ink</a></li>
@@ -540,14 +535,14 @@
                         <li><a href="#">Canon MP495 ink</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Epson</h4>
                     <ul>
                         <li><a href="#">Epson XP-405 ink</a></li>
                         <li><a href="#">Epson XP-405 ink</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>HP</h4>
                     <ul>
                         <li><a href="#">HP P2055dn тонер</a></li>
@@ -555,13 +550,13 @@
                         <li><a href="#">HP P2055dn тонер</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Samsung</h4>
                     <ul>
                         <li><a href="#">Samsung CLP-315 тонер</a></li>
                     </ul>   
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Canon</h4>
                     <ul>
                         <li><a href="#">Canon MP495 ink</a></li>
@@ -569,7 +564,7 @@
                         <li><a href="#">Canon MP495 ink</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Epson</h4>
                     <ul>
                         <li><a href="#">Epson XP-405 ink</a></li>
@@ -585,7 +580,7 @@
                         <button type="submit" class="btn">Нажмите здесь!</button>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>HP</h4>
                     <ul>
                         <li><a href="#">HP P2055dn тонер</a></li>
@@ -593,13 +588,13 @@
                         <li><a href="#">HP P2055dn тонер</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Samsung</h4>
                     <ul>
                         <li><a href="#">Samsung CLP-315 тонер</a></li>
                     </ul>   
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Canon</h4>
                     <ul>
                         <li><a href="#">Canon MP495 ink</a></li>
@@ -607,14 +602,14 @@
                         <li><a href="#">Canon MP495 ink</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Epson</h4>
                     <ul>
                         <li><a href="#">Epson XP-405 ink</a></li>
                         <li><a href="#">Epson XP-405 ink</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>HP</h4>
                     <ul>
                         <li><a href="#">HP P2055dn тонер</a></li>
@@ -622,13 +617,13 @@
                         <li><a href="#">HP P2055dn тонер</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Samsung</h4>
                     <ul>
                         <li><a href="#">Samsung CLP-315 тонер</a></li>
                     </ul>   
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Canon</h4>
                     <ul>
                         <li><a href="#">Canon MP495 ink</a></li>
@@ -636,7 +631,7 @@
                         <li><a href="#">Canon MP495 ink</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                     <h4>Epson</h4>
                     <ul>
                         <li><a href="#">Epson XP-405 ink</a></li>
@@ -654,10 +649,12 @@
                     <h3>Все расходные материалы, которые вам могут потребоваться</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
                 </div>
-                <div class=" col-lg-12 col-md-6">
-                    <div class="rectangle text-center">
-                        <span>При заказе товара в наличии до 13:00, мы доставим сегодня!</span>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="text-center">
                         <div class="square"></div>
+                        <div class="rectangle">
+                            <span>При заказе товара в наличии до 13:00, мы доставим сегодня!</span>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -669,79 +666,79 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 header">
-                    <div>
+                    <div class="justify-content-start d-flex ">
                         <a href="#">О компании</a>
                         <a class="two-link" href="#">Статьи</a>
                     </div>
-                    <div>
+                    <div class="">
                         <p>Присоеденяйтесь к нашим группам в соц. сетях:  <span><a href="#">B</a></span></p>
                     </div>
                 </div>
-                <div class="links ">
-                    <div class="list-ul">
-                        <ul class="first-ul">
-                            <li><a class="blue" href="#">Поддержка клиентов</a></li>
-                        </ul>
-                        <ul class="second-ul">
-                            <li><a href="#">Гарантия 100%</a></li>
-                            <li><a href="#">Способ оплаты</a></li>
-                            <li><a href="#">Доставка</a></li>
-                            <li><a href="#">История заказов</a></li>
-                            <li><a href="#">Статус заказа</a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="list-ul">
-                        <ul class="first-ul">
-                            <li><a class="blue" href="#">Связатся с нами</a></li>
-                        </ul>
-                        <ul class="second-ul">
-                            <li><a href="#">Написать нам</a></li>
-                            <li><a href="#">Заказаь звонок</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="list-ul">
-                        <ul class="first-ul">
-                            <li><a class="blue" href="#">Картриджи для лазерных<br> принтеров </a> </li>
-                        </ul>
-                        <ul class="second-ul">
-                            <li><a href="#">Canon</a></li>
-                            <li><a href="#">HP</a></li>
-                            <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Lexmar</a></li>
-                            <li><a href="#">Brother</a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="list-ul">
-                        <ul class="first-ul">
-                            <li><a class="blue" href="#">Картриджи для струйных<br> принтеров</a></li>
-                        </ul>
-                        <ul class="second-ul">
-                            <li><a href="#">Canon</a></li>
-                            <li><a href="#">HP</a></li>
-                            <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Lexmar</a></li>
-                            <li><a href="#">Brother</a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="list-ul">
-                        <ul class="color-ul">
-                            <li><a href="#">Карта сайта</a></li>
-                            <li><a href="#">Условия использования сайта</a></li>
-                            <li><a href="#">Политика конфиденциальности</a></li>
-                        </ul>
-                        <ul class="second-ul">
-                            <li>2015 ITural: Все права защищены</li>
-                        </ul>
-                        <ul class="last-ul">
-                            <li><a class="blue" href="#">Создание сайтов</a></li>
-                        </ul>
-                    </div>
+                
+                <div class="list-ul one col-lg col-md-3 col-sm-5">
+                    <ul class="first-ul">
+                        <li><a class="blue" href="#">Поддержка клиентов</a></li>
+                    </ul>
+                    <ul class="second-ul">
+                        <li><a href="#">Гарантия 100%</a></li>
+                        <li><a href="#">Способ оплаты</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">История заказов</a></li>
+                        <li><a href="#">Статус заказа</a></li>
+                    </ul>
                 </div>
+
+                <div class="list-ul two col-lg col-md-3 col-sm-5">
+                    <ul class="first-ul">
+                        <li><a class="blue" href="#">Связатся с нами</a></li>
+                    </ul>
+                    <ul class="second-ul">
+                        <li><a href="#">Написать нам</a></li>
+                        <li><a href="#">Заказаь звонок</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="list-ul three col-lg col-md-3 col-sm-5">
+                    <ul class="first-ul">
+                        <li><a class="blue" href="#">Картриджи для лазерных<br> принтеров </a> </li>
+                    </ul>
+                    <ul class="second-ul">
+                        <li><a href="#">Canon</a></li>
+                        <li><a href="#">HP</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Lexmar</a></li>
+                        <li><a href="#">Brother</a></li>
+                    </ul>
+                </div>
+
+                <div class="list-ul four col-lg col-md-3 col-sm-5">
+                    <ul class="first-ul">
+                        <li><a class="blue" href="#">Картриджи для струйных<br> принтеров</a></li>
+                    </ul>
+                    <ul class="second-ul">
+                        <li><a href="#">Canon</a></li>
+                        <li><a href="#">HP</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Lexmar</a></li>
+                        <li><a href="#">Brother</a></li>
+                    </ul>
+                </div>
+
+                <div class="list-ul five col-lg col-md-3 col-sm-5">
+                    <ul class="color-ul">
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Условия использования сайта</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                    <ul class="second-ul">
+                        <li>2015 ITural: Все права защищены</li>
+                    </ul>
+                    <ul class="last-ul">
+                        <li><a class="blue" href="#">Создание сайтов</a></li>
+                    </ul>
+                </div>
+                
             </div> 
         </div>
     </section>
@@ -750,22 +747,22 @@
         <div class="container">
             <div class="row">
                 <h3 class="col-lg-12 text-center">Что нибудь еще?</h3>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <img src="./images/printer-1.png">
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <img src="./images/printer-2.png">
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <img src="./images/printer-3.png">
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <a href="#">Заправка<br> картриджей</a>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <a href="#">Прошивка<br> принтеров</a>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center">
                     <a href="#">Ремонт принтеров<br> и МФУ</a>
                 </div>
             </div>
@@ -776,7 +773,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div>
+                    <div class="rectangle">
                         <ul>
                             <li>ITural</li>
                             <li>Адрес: г. Екатеринбург, ул. 8 Марта, д. 14, 1 этаж</li>
@@ -786,7 +783,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div>
+                    <div class="rectangle">
                         <ul>
                             <li>ООО «ИТ Сервис»</li>
                             <li>Юридический адрес: ул. 8 Марта 14, оф. 211, г. Екатеринбург, Россия,</li>
