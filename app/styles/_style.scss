@@ -413,7 +413,7 @@ menu {
 
         .dropdown-menu {
             width: 230px;
-            margin: 20px;
+            // margin: 20px;
 
             a {
                 &:hover {
@@ -1232,6 +1232,16 @@ menu {
 
 
             .form-two {
+
+
+                .dropdown-menu {
+
+                    width: auto;
+
+                    .dropdown-item {
+                        font-size: 12px;
+                    }
+                }
 
                 .btn-orange {
                     width: 150px;
